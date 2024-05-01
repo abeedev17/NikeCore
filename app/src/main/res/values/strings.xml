@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">NikeCore</string>
+    <string name="title_run">Run</string>
+    <string name="title_useractivity">Activity</string>
+    <string name="title_payment">Payment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="filter_options">
+        <item>Date</item>
+        <item>Running Time</item>
+        <item>Distance</item>
+        <item>Average Speed</item>
+        <item>Calories Burned</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="OnBoarding_text_Collect_tickets">Collect tickets, get exclusive discounts</string>
+    <string name="OnBoarding_text_Use_map">Use map to discover places with more tickets</string>
+    <string name="OnBoarding_text_Maintain_your">Maintain your pace and earn rewards</string>
+    <string name="get_started">Get started</string>
+    <string name="mute_unmute_button">Mute/Unmute</string>
+    <string name="start_run">Start run</string>
+    <string name="start">START</string>
+    <string name="before_we_begin">Before we begin, provide us this information to help us imporove your experience</string>
+    <string name="zero_value">00:00</string>
+    <string name="zero_value1">00:00:00:00</string>
+    <string name="bpm">BPM</string>
+    <string name="speed">Speed</string>
+    <string name="kilo_meters">Kilo Meters</string>
+    <string name="pause_run">Pause Run</string>
+    <string name="one_txt">1</string>
+    <string name="user_name">Name</string>
+    <string name="user_height">Height(cm)</string>
+    <string name="user_weight">Weight(kg)</string>
+    <string name="balance">Balance</string>
+    <string name="tickets_collected">Tickets Collected</string>
+    <string name="start_payment">Start payment</string>
+    <string name="resume_run">resume run</string>
+    <string name="stop_run">stop_run</string>
+    <string name="map_of_your_location">map of your current location</string>
+    <string name="finish_run">Finish Run</string>
+    <string name="your_map_location_and_coins">Your Map Location and coins</string>
+    <string name="sort_by">Sort by:</string>
+    <string name="make_sure_the_data">Make sure the data you have entered is correct, since it may cause the calorie counter to be less accurate</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="distance">Distance</string>
+    <string name="avg_speed">Avg speed</string>
+    <string name="calories">Cal(kcal)</string>
+    <string name="stats_of_all_runs">Stats of all runs</string>
+    <string name="cancel_run">Cancel Run</string>
+    <string name="hand_touch">👆</string>
+    <string name="long_press">Long Press to finish your run</string>
+    <string name="long_press_cancel">Long Press to cancel your run</string>
+
+    <string name="please_enter_all">Please enter all fields</string>
+
+    <string name="location_services">Please enable location services</string>
+    <string name="saved_changes">Saved changes</string>
+    <string name="run_saved">Run saved successfully</string>
+    <string name="change_info">Change Info</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="devices">Devices</string>
+    <string name="info">Info</string>
+    <string name="hello">hello</string>
+    <string name="Congrats">Congratulations</string>
+    <string name="ticket_collected">Ticket Collected</string>
+    <string name="location_run_frag">Please enable location services and reload the app</string>
+    <string name="ten_euros">+ 10 €</string>
+    <string name="show_ticket">Show ticket</string>
+    <string name="go_back">Go Back</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="string_euro">%s€</string>
+    <string name="_10">10</string>
+    <string name="payment_msg">Please enter amount greater than 0 and do not use decimal numbers</string>
+    <string name="reload_ticket_location">reload ticket location</string>
+    <string name="your_run_overview">Your run overview</string>
+    <string name="settings">settings</string>
+    <string name="your_run_statistics">Your run statistics</string>
+    <string name="scan">Scan</string>
+    <string name="item">item</string>
+    <string name="connect">Connect</string>
+
+
+</resources>

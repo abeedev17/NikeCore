@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.settings.SettingsFragment">
+
+
+    <TextView
+        android:id="@+id/devicesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/devices"
+        android:textColor="#737373"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/infoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:textColor="#737373"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/heartRateBtn"
+        android:layout_width="206dp"
+        android:layout_height="132dp"
+        android:text="@string/heart_rate"
+        android:textAllCaps="false"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_heart_rate"
+        app:iconGravity="textTop"
+        app:iconTint="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:rippleColor="@color/grey" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editInfoBtn"
+        android:layout_width="206dp"
+        android:layout_height="132dp"
+        android:text="@string/change_info"
+        android:textAllCaps="false"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/ic_info"
+        app:iconGravity="textTop"
+        app:iconTint="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        app:rippleColor="@color/grey" />
+</androidx.constraintlayout.widget.ConstraintLayout>

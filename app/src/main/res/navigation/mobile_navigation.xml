@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/onboardingFragment">
+
+    <action
+        android:id="@+id/action_global_runStartedFragment"
+        app:destination="@id/runStartedFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_runPausedFragment"
+        app:destination="@id/runPausedFragment"
+        app:launchSingleTop="true" />
+    <fragment
+        android:id="@+id/navigation_run"
+        android:name="com.example.nikecore.ui.run.RunFragment"
+        android:label="@string/title_run"
+        tools:layout="@layout/fragment_run">
+        <action
+            android:id="@+id/action_navigation_run_to_countingFragment"
+            app:destination="@id/countingFragment"
+            app:enterAnim="@android:animator/fade_in"
+            app:exitAnim="@android:animator/fade_out"
+            app:popEnterAnim="@android:animator/fade_in"
+            app:popExitAnim="@android:animator/fade_out" />
+        <action
+            android:id="@+id/action_navigation_run_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_navigation_run_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_useractivity"
+        android:name="com.example.nikecore.ui.useractivity.UseractivityFragment"
+        android:label="@string/title_useractivity"
+        tools:layout="@layout/fragment_useractivity" />
+
+    <fragment
+        android:id="@+id/navigation_payment"
+        android:name="com.example.nikecore.ui.payment.PaymentFragment"
+        android:label="@string/title_payment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_navigation_payment_to_nfcFragment"
+            app:destination="@id/nfcFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/runStartedFragment"
+        android:name="com.example.nikecore.ui.runstarted.RunStartedFragment"
+        android:label="run_started_fragment"
+        tools:layout="@layout/run_started_fragment">
+        <action
+            android:id="@+id/action_runStartedFragment_to_runPausedFragment"
+            app:destination="@id/runPausedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countingFragment"
+        android:name="com.example.nikecore.ui.counting.CountingFragment"
+        android:label="fragment_counting"
+        tools:layout="@layout/counting_fragment">
+        <action
+            android:id="@+id/action_countingFragment_to_runStartedFragment"
+            app:destination="@id/runStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.nikecore.ui.onBoarding.OnboardingFragment"
+        android:label="onboarding_fragment"
+        tools:layout="@layout/onboarding_fragment">
+        <action
+            android:id="@+id/action_onboardingFragment_to_askinfoFragment"
+            app:destination="@id/askinfoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/askinfoFragment"
+        android:name="com.example.nikecore.ui.askinfo.AskinfoFragment"
+        android:label="askinfo_fragment"
+        tools:layout="@layout/askinfo_fragment">
+        <action
+            app:popUpTo="@id/onboardingFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_askinfoFragment_to_navigation_run"
+            app:destination="@id/navigation_run" />
+    </fragment>
+    <fragment
+        android:id="@+id/runPausedFragment"
+        android:name="com.example.nikecore.ui.runpaused.RunPausedFragment"
+        android:label="run_paused_fragment"
+        tools:layout="@layout/run_paused_fragment">
+        <action
+            android:id="@+id/action_runPausedFragment_to_runStartedFragment"
+            app:destination="@id/runStartedFragment" />
+        <action
+            android:id="@+id/action_runPausedFragment_to_navigation_run"
+            app:destination="@id/navigation_run" />
+        <action
+            android:id="@+id/action_runPausedFragment_to_ARFragment"
+            app:destination="@id/ARFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.nikecore.ui.settings.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment">
+        <action
+            android:id="@+id/action_settingsFragment_to_navigation_run"
+            app:destination="@id/navigation_run" />
+        <action
+            android:id="@+id/action_settingsFragment_to_editInfoFragment"
+            app:destination="@id/editInfoFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_heartRateFragment"
+            app:destination="@id/heartRateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.nikecore.ui.statistics.StatisticsFragment"
+        android:label="statistics_fragment"
+        tools:layout="@layout/statistics_fragment" />
+    <fragment
+        android:id="@+id/editInfoFragment"
+        android:name="com.example.nikecore.ui.settings.editinfo.EditInfoFragment"
+        android:label="edit_info_fragment"
+        tools:layout="@layout/edit_info_fragment">
+        <action
+            android:id="@+id/action_editInfoFragment_to_navigation_run"
+            app:destination="@id/navigation_run" />
+    </fragment>
+    <fragment
+        android:id="@+id/heartRateFragment"
+        android:name="com.example.nikecore.settings.bluetooth.HeartRateFragment"
+        android:label="fragment_heart_rate"
+        tools:layout="@layout/fragment_heart_rate" />
+    <fragment
+        android:id="@+id/ARFragment"
+        android:name="com.example.nikecore.ui.ar.ARFragment"
+        android:label="a_r_fragment"
+        tools:layout="@layout/a_r_fragment">
+        <action
+            android:id="@+id/action_ARFragment_to_runPausedFragment"
+            app:destination="@id/runPausedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nfcFragment"
+        android:name="com.example.nikecore.ui.nfc.NfcFragment"
+        android:label="nfc_fragment"
+        tools:layout="@layout/nfc_fragment" />
+</navigation>
